@@ -113,13 +113,13 @@
 
 <div class="info">
     <img src="hero-bg.png" alt="">
-    <h1>Seja bem-vindo a MOB SHOP </h1>
+    <h1>Seja bem-vindo a GOLD SHOP </h1>
     <p>Faça aqui as suas recargas de diamantes ao melhor preço!</p>
     <h3 style="color: rgb(8, 255, 8);">SERVIDOR: BR</h3>
 </div>
 
 <div class="cont">
-  <h1>💎MOB SHOP</h1>
+  <h1>💎GOLD SHOP</h1>
   <p>Escolhe a quantidade de diamantes e insira o teu ID</p>
 
 
@@ -175,6 +175,8 @@
     <input type="text" id="playerId" placeholder="Insira o teu ID do jogador" oninput="this.value =  this.value.replace(/[^0-9]/g, '').slice(0,10)" style="width: 94%;">
     
     <button class="whatsapp-btn" onclick="sendToWhatsApp()" style="display: flex; align-items: center;justify-content: center;gap: 8px;"> <img src="whats.png" alt="logo" width="20px"> Fazer pedido via WhatsApp</button>
+    
+    <button class="whatsapp-btn"  style="display: flex; align-items: center;justify-content: center;gap: 8px;"> <img src="whats.png" alt="logo" width="20px"> <a href="https://chat.whatsapp.com/Dw3MOd782V1GwNdtmrvP8I?mode=hqrt2" target="_blank" style="text-decoration: none;color: #fff;" >Juntar-se ao grupo do WhatsApp</a></button>
   </div>
 
 </div>
@@ -198,15 +200,14 @@
         return;
       }
 
-      const message = `Olá! Quero fazer uma recarga de ${selectedDiamonds} diamantes. Aqui está o meu ID:${playerId}  Como faço o pagamento?`;
+      const message = `Olá Gold Shop! Quero fazer uma recarga de ${selectedDiamonds} diamantes. Aqui está o meu ID:${playerId},  Como faço o pagamento?`;
 
 const url = `https://wa.me/+244926524218?text=${encodeURIComponent(message)}`;
       window.open(url, '_blank');
     }
 
+
+
   </script>
 </body>
 </html>
-
-
-
